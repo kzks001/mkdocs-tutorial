@@ -1,0 +1,22 @@
+site_name: My Docs
+
+theme:
+  name: material
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          selection:
+            filters:
+              - "!^_"
+
+nav:
+  - index.md
+  - about.md
+  - "Lewoy Guide":
+    - lewoy_directory/lewoy.md
+    - lewoy_directory/sleep.md
+    - lewoy_directory/in.md
+    - lewoy_directory/class.md
